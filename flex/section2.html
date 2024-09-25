@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>section2</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    ul {
+      display: flex;
+      padding: 0;
+      list-style: none;
+      height: 200px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+  </style>
+  <body>
+    <ul>
+      <li>111111</li>
+      <li>222222</li>
+      <li>333333</li>
+      <li>444444</li>
+      <li>555555</li>
+    </ul>
+  </body>
+</html>
+
+<!--
+flex-direction : 플랙스 컨테이너의 주축을 결정하는 속성
+row: 가로 (왼쪽부터 시작)
+column : 세로
+row-reverse : 가로 (오른쪽 부터 시작)
+
+flex-wrap: 플랙스 아이템들이 강제로 한 줄에 배치되게 할 것인지, 여러 행으로 나누어 표현할 것인지 결정
+nowrap: 기본값, 공간이 부족하더라도 요소를 한 줄에 배치
+wrap: 공간 크기에 따라 요소가 여러 행으로 배치
+wrap-reverse:wrap과 동일하나 요소 나열되는 시작점과 끝점이 반대
+
+
+flex-flow : flex direction flex-wrap을 동시에 제어가능
+flex-flow : row-nowrap
+-->

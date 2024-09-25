@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+ul{
+    display: flex;
+    padding: 0;
+    list-style: none;
+    height: 300px;
+
+}
+
+/*
+flex는 기본적으로 박스타입
+글자가 차지하는 만큼만 공간을 두고 싶다면 inline-flex를 하면 된다.
+
+ul 플렉스 컨테이너
+li 플렉스 아이템
+*/

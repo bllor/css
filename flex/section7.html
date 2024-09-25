@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>section7</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    ul {
+      display: flex;
+      padding: 0;
+      list-style: none;
+      height: 200px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      border: 7px solid black;
+    }
+
+    li {
+      background-color: aqua;
+    }
+
+    li:nth-child(2n) {
+      background-color: beige;
+    }
+  </style>
+  <body>
+    <ul>
+      <li>111111</li>
+      <li>222222</li>
+      <li>333333</li>
+      <li>444444</li>
+      <li>555555</li>
+    </ul>
+  </body>
+</html>
+
+<!--
+order : 플랙스 아이템의 배치 순서를 설정
+코드는 그대로 있고, ui에 보여질 때만 order대로 조정이 된다.
+
+-->

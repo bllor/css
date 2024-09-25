@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>section6</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    ul {
+      display: flex;
+      padding: 0;
+      list-style: none;
+      height: 200px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      border: 7px solid black;
+    }
+
+    li {
+      background-color: aqua;
+    }
+
+    li:nth-child(2n) {
+      background-color: beige;
+    }
+    li:nth-child(2) {
+      flex-grow: 1;
+    }
+  </style>
+  <body>
+    <ul>
+      <li>111111</li>
+      <li>222222</li>
+      <li>333333</li>
+      <li>444444</li>
+      <li>555555</li>
+    </ul>
+  </body>
+</html>
+
+<!--
+flex-basis : 플랙스아이템의 초기 크기를 지정한다.
+box-sizing이 따로 설정되지 않은 경우, 콘텐츠 박스의 크기를 결정
+기본값은 auto이다.
+witdh속성을 정의할 때와 동일한 방식
+
+flex 0 0 200px -- 200px보다 작아지지도 늘어나지도 않는다.
+flex : flex-grow, flex-shrink, flex-basis 위 세가지 속성을 정의할 수 있는 단축 속성
+-->
