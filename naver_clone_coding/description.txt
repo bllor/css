@@ -13,4 +13,13 @@ head부분은 메타데이터, body는 데이터
 display : inline-block -- 주어진 너비만큼만 공간을 특성을 차지
 display : inline -- 높이와 넓이를 무시한다.
 
+position: absolute - 부모 또는 조상 중에 포지션 스태틱이 아닌 것이 기준이 된다.
+position: fixed - 스크롤을 내려도 현위치에 고정
+position: sticky - absolute처럼 있다가 스크롤을 내리면 fixed가 됨.
 
+모든 태그에는 before, after 가상태그를 사용할 수 있다.
+가상태그는 자식요소라고 볼 수 있다.
+
+z-index는 형제 관계일 때만 사용가능 하다.
+
+display:none 이것을 많이 사용하지 않는 것이 좋은데, 시각장애인 같은 분이 웹사이트에 들어갔을 때 컨탠츠가 읽히지 않는다.
