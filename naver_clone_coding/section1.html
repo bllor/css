@@ -76,6 +76,12 @@
       * {
         box-sizing: border-box;
       }
+
+      form {
+        margin: 0;
+        padding: 0;
+      }
+
       html,
       body {
         margin: 0;
@@ -183,8 +189,48 @@
             <div><span class="blind">알림</span></div>
           </button>
         </div>
+        <style>
+          #search > form {
+            width: 708px;
+            height: 60px;
+            border: 1px solid #03c75a;
+            border-radius: 33px;
+            display: inline-block;
+          }
+          #search > form > input {
+            width: 480px;
+            height: 58px;
+            padding: 17px 0px;
+            border: none;
+            outline: none;
+            text-align: left;
+          }
+
+          #search > form svg {
+            width: 24px;
+            height: 24px;
+          }
+
+          #search > form > a {
+            width: 67px;
+            height: 58px;
+            padding: 17px 16px 17px 27px;
+            margin-right: 12px;
+          }
+        </style>
         <div id="search">
           <form action="">
+            <a href="#">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z"
+                ></path>
+              </svg>
+            </a>
             <label for="search-input" class="blind">검색어 입력</label>
             <input type="text" />
             <button class="blind"></button>
